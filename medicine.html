@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Camp registration</title>
+  </head>
+  <body style="background-color: rgb(255, 254, 215);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="medicine.html">Types of Medicine</a>
+              </li>
+                
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About us</a>
+            </li>
+               
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+                 </form>
+                 <div class="mx-2">
+                     <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+                 </div>
+          </div>
+        </div> 
+    </nav> 
+    
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">login for your confirmatiom</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="connect.php" method="post">
+            <div class="form-group">
+              <label for="exampleinputemail1">Your Name</label>
+              <input type="Name" class="form-control" id="exampleInputName1" name="Name" >
+              <label for="exampleinputemail1">Phone number</label>
+              <input type="Name" class="form-control" id="exampleInputName1" name="Number" >
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your id</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Getting in informaterry blog</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Creat Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.britannica.com/50/123550-050-885369B3/Prozac-pills.jpg" height="600px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.elearnafrica.com/uploads/course_logo/60fe0947180ba.jpg"  height="600px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShD4e2vs6p_S_MKcvT6uwnbPwU8kriFQzJoA&usqp=CAU" height="600px
+          " class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br><br><br>
+
+    <H1 style="text-align: center; color: brown;">Free Medicine Distribution</H1><br>
+    <p style="text-align: center; font-size: 25px; color: black;">The poor and needy children are distributed free medication in the relief programs offering medicine</p>
+
+    <img src="https://www.google.com/maps/vt/data=xGKSOmcc_N0uOhcvdRn693QEPiX49ATbXY3jB0-N3b3XV8GnoSq2jGebfhJxfMqQ14T0R7TDhpsRM1N5h8RA5xUy32bqkjUjnibVH_9ayJQrzpdZaozesbYeMQC1aYWmHBExEfql7GQAzkC1-C4bIp84UejEQGaNSKVDFp62wg0B5H1oEpUIherh6RS8GCpVHjbtSw2ipQo0QuZF5v6K15g1oEAeT-2xVN_KmQoxOdfFExu2ptsc_C_8nIwcTdfoLsLlOzVgrJf4cWbQaTCRXkFweMCkSNWYTXZJpwsGxI4oTLJwwr29cQfyUxiyMqbTKRNKDh4X3-4Xbnqobys9WEiko8LK1Eg_eH-KMeMMWVzdM4kD2Nlr2OkqJqdATfd5gFhVvwmNDnkqUtvEIBnhbYRwzN-hMvOkTHZDxRfDPGTYrFQdjlTMhjDq8VvWkkCtz_XK0TGJG7z8evwXc71I2Hwcmzm3cB1NlF3hW8o7knZY2NXCT2dDlSUxo-7eA5QAhNgyXFmtd2o1HL4uJm1Y8uLPHKNmEOGH4jQoqhYyfPrJLGyb_ueP8gL8-Ir0NVa13i6nw8RDUgSb-AuM6eADsooq4m7co80WdMIdz4G8XYFPFfsmz-R0Vnx-XEI0xM-UL9X9IWjKhPl2pgL-w7pY6zmNUk7XLHHBhcrrUz6paV2ooArNW9LQB5R1B5HnNKNmtOnO7DTEVMy8HkTjElbNa9VUzkvThjM-hstIrBGkeA3TJ92H_Ea3k58TDNNSQ2Tri172_WcUO-Rd-WIuIT4HdF_koNA4jxjkTsue56_Gu1pCzHdXvWl91Ag1GLyJRYkhb5gUq6hvJ_b5s682ViOdKLEnBIySq4d7KH7MokMps-OeM4NfdE_2BU9Trlcjuj18FsQYN0fg4zVpiTWqlQg2db8KvlEMqt5qyNmuc4iJ-OKlJFSqlFS4RyZngoL2HsnWb-m9MhPMjdUm54vaT5oy5p7VJz5vCZXx8w9CYd9pl1nhxMsF7gQWIbs7yZ-kK6hkvrEmEiyXRCJlT1g8-ZdDrhOLTVTSMVeImA29zucTLAITSMgeESune_-2LfsD8OZHMs1QLyS001S_AIehfqLIW7UknBz80GrXkw" width="100%" height="400px" alt=""><br><br><br><hr>
+
+
+    <footer class="footer-top">
+      <div class="container">
+  
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="partners-img">
+  <ul>
+              </ul>
+      </div>
+  </div>
+          </div>
+  
+          <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mar-bttm">
+                  <h5 style="font-size: 18px;">LATEST UPDATES</h5>
+                  <ul><li><a title="Drug Tenders" href="/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/Tenders/Drug-Tenders.html" class=" " target="_self" rel="noopener noreferrer">
+              Drug Tenders </a>
+  
+  
+    </li><li><a title="Equipment Tenders" href="/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/Tenders/Equipment-Instrument-Tenders.html" class=" " target="_blank" rel="noopener noreferrer">
+              Equipment Tenders </a>
+  
+  
+    </li><li><a title="Finance Tenders" href="/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/Tenders/Finance-Tenders.html" class=" " target="_blank" rel="noopener noreferrer">
+              Finance Tenders </a>
+  
+  
+    </li><li><a title="News &amp; Events" href="/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/queries/news---events.html" class=" " target="_blank" rel="noopener noreferrer">
+              News &amp; Events </a>
+  
+  
+    </li></ul><div class="baseRichText">
+      </div></div>
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mar-bttm">
+                  <h5 style="font-size: 18px;">Nodal Officer</h5>
+                  <div class="baseRichText">
+      <p style="font-size: 12px;"><b>Dr.Kalpana Vyas ED (L)</b> -<b> Nodal Officer Website</b></p>
+  <p style="font-size: 12px;">Email :edlrmsc@nic.in<br>
+  </p>
+  <p style="font-size: 12px;">Landline No:0141-2228065&nbsp;&nbsp;&nbsp;</p>
+  <p style="font-size: 12px;"><b><br>
+  Sh. Vikram Singh Sankhla Joint Director (IT)</b> -<b>Technical Officer</b><br>
+  Email : mit-rmsc-rj@nic.in , itcell-rmsc-rj@nic.in<br>
+  Landline No:0141-2228065&nbsp; , 0141-2224783</p></div></div>
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mar-bttm quicklinks">
+                  <h5 style="font-size: 18px;">Quick Links</h5>
+                  <ul><li><a title="Head of Department" href="http://rmsc.health.rajasthan.gov.in/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/about-us/contact-us.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Head of Department </a>
+  
+  
+    </li><li><a title="Contact us" href="http://rmsc.health.rajasthan.gov.in/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/about-us/contact-us0.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Contact us </a>
+  
+  
+    </li><li><a title="Directory" href="http://rmsc.health.rajasthan.gov.in/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/contact-us/Head-Office.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Directory </a>
+  
+  
+    </li><li><a title="Screen Reader Access" href="http://rmsc.health.rajasthan.gov.in/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/screen-reader-access.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Screen Reader Access </a>
+  
+  
+    </li><li><a title="Accessibility Statement" href="http://rmsc.health.rajasthan.gov.in/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/accessibility-statement-.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Accessibility Statement </a>
+  
+  
+    </li><li></li><li><a title="Site Map" href="http://103.122.36.136/cf#/content/raj/medical/rajasthan-medical-services-corporation-ltd-/en/sitemap.html" class=" " target="_blank" rel="noopener noreferrer" style="font-size: 14px;">
+              Site Map </a>
+  
+  
+    </li></ul></div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="social">                    
+                      <ul></ul></div>
+              </div>
+          </div>
+      </div>
+      <div class="scroll-button-wrap">
+          <a href="#h-banner" class="scrollBtn" rel="noopener noreferrer"><i class="fa fa-arrow-circle-up"></i><span class="hide-txt3">scroll up</span></a>
+      </div>
+  </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
